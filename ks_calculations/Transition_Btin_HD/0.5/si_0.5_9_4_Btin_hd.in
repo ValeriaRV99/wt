@@ -1,0 +1,48 @@
+&CONTROL
+   calculation = 'scf'
+   prefix = 'si_0.5_9_4_Btin_hd'
+   pseudo_dir = '/home/vr371/Projects/PP/ofpp/EAC/upf/blps/'
+   restart_mode = 'from_scratch'
+/
+
+&SYSTEM
+   ibrav = 0
+   nat = 4
+   degauss = 0.005
+   ecutwfc = 60
+   occupations = 'smearing'
+   ntyp = 1
+/
+
+&ELECTRONS
+/
+
+&IONS
+/
+
+&CELL
+/
+
+&FCP
+/
+
+&RISM
+/
+
+ATOMIC_SPECIES
+Si  28.08 si.lda.upf
+
+K_POINTS automatic
+20 20 20 1 1 1
+
+CELL_PARAMETERS angstrom
+4.24897287313453 0.00000785328027 -0.00000000000020
+-0.93856584232320 3.99748706493034 -0.00000000000386
+-0.00000000000033 -0.00000000000751 4.39304265703376
+
+ATOMIC_POSITIONS angstrom
+Si   -0.09055308624835 0.97391139011818 1.48409735462457
+Si   2.12770836281885 1.69012153170233 0.61064114040778
+Si   0.09056243212165 2.37955345657258 3.47206145851075
+Si   2.12126876672296 0.57957587180624 2.56592329155079
+

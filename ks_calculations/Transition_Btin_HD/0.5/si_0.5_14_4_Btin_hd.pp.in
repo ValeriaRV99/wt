@@ -1,0 +1,12 @@
+&INPUTPP
+  outdir='/projectsn/mp1009_1/Valeria/cWT-KEDF/Phases/Transition_Btin_hd/0.5/',
+  prefix='si_0.5_14_4_Btin_hd',
+  plot_num=0,
+/
+
+&PLOT
+  iflag=3,
+  output_format=5,
+  fileout='si_0.5_14_4_Btin_hd.xsf',
+  nx=100, ny=100, nz=100,
+/
