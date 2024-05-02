@@ -1,0 +1,46 @@
+&CONTROL
+   calculation = 'scf'
+   prefix = 'si'
+   pseudo_dir = '/home/valeria/Desktop/programs/dftpy/examples/ofpp/EAC/upf/blps/'
+   restart_mode = 'from_scratch'
+/
+
+&SYSTEM
+   ibrav = 0
+   nat = 2
+   degauss = 0.005
+   ecutwfc = 60
+   occupations = 'smearing'
+   ntyp = 1
+/
+
+&ELECTRONS
+/
+
+&IONS
+/
+
+&CELL
+/
+
+&FCP
+/
+
+&RISM
+/
+
+ATOMIC_SPECIES
+Si  28.08 si.lda.upf
+
+K_POINTS automatic
+20 20 20 1 1 1
+
+CELL_PARAMETERS angstrom
+5.54896551724138 0.00000000000000 0.00000000000000
+1.70354815325268 5.28099820120053 0.00000000000000
+-3.62625559003442 -2.64049819388491 3.26635239914014
+
+ATOMIC_POSITIONS angstrom
+Si   4.54460275862069 4.54460275862069 0.00000000000000
+Si   1.00436275862069 1.00436275862069 0.00000000000000
+

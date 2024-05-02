@@ -46,9 +46,9 @@ def get_energy(material, path_rho, PP_list, rho0, i,r):
     print(of_material)
     for j, d in enumerate(r):
         pred_KE = Functional(type='KEDF',name='WT', rho0=pred_rho00[i][j])
-        ions = Ions.from_ase(of_material)
-        cell = ions.get_cell()
-        ions.set_cell(cell * d, scale_atoms=True)
+        ions = of_material
+#         cell = ions.get_cell()
+#         ions.set_cell(cell * d, scale_atoms=True)
         if path_rho is None:
             nr = ecut2nr(ecut=25, lattice=ions.cell)
             grid = DirectGrid(lattice=ions.cell, nr=nr)

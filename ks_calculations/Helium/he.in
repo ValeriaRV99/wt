@@ -1,0 +1,45 @@
+&CONTROL
+   calculation = 'scf'
+   prefix = 'he'
+   pseudo_dir = '/Users/valeria/Documents/PP/nc'
+   restart_mode = 'from_scratch'
+/
+
+&SYSTEM
+   ibrav = 0
+   nat = 1
+   degauss = 0.005
+   ecutwfc = 60
+   nbnd = 4
+   occupations = 'smearing'
+   ntyp = 1
+/
+
+&ELECTRONS
+/
+
+&IONS
+/
+
+&CELL
+/
+
+&FCP
+/
+
+&RISM
+/
+
+ATOMIC_SPECIES
+He  4.002602 He.upf
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+10.00000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 10.00000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 10.00000000000000
+
+ATOMIC_POSITIONS angstrom
+He   5.00000000000000 5.00000000000000 5.00000000000000
+
